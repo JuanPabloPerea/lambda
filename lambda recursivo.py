@@ -1,7 +1,7 @@
 def recursivo(funtion):
     def envoltura(num1,**num2):
         fi = lambda num1, **num2: funtion(fi, num1, **num2)
-        return def_fun(fi, num1, **num2)
+        return funtion(fi, num1, **num2)
 
     return wrapper
 
